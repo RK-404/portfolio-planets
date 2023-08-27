@@ -56,19 +56,15 @@ function EditPlanet() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    planet.planet_order = planet.planet_order === "" ? -1 : planet.planet_order;
+    planet.moons = planet.moons === "" ? -1 : planet.moons;
     updatePlanet(planet, id);
-  };
-
-  const checkLength = (event) => {
-    if (event.target.value.length > 4) {
-        event.target.value = event.target.value.slice(0,4); 
-    }
   };
 
   return (
     <div className="NewEdit">
       <form onSubmit={handleSubmit}>
-        {/* <label htmlFor="name">Planet Name:</label> */}
+        <label htmlFor="name">Planet Name (Required):</label>
         <input
           id="name"
           value={planet.name}
@@ -77,7 +73,7 @@ function EditPlanet() {
           placeholder="Name of the Planet"
           required
         />
-        {/* <label htmlFor="type">Planet Type:</label> */}
+        <label htmlFor="type">Planet Type (Required):</label>
         <input
           id="type"
           type="text"
@@ -86,7 +82,7 @@ function EditPlanet() {
           placeholder="Planet Type?"
           required
         />
-        {/* <label htmlFor="planet_order">Planet Order in the Solar System:</label> */}
+        <label htmlFor="planet_order">Planet Order in the Solar System (Numbers only):</label>
         <input
           id="planet_order"
           type="number"
@@ -94,7 +90,7 @@ function EditPlanet() {
           onChange={handleNumberChange}
           placeholder="Planet Order in the Solar System (nummer only)"
         />
-        {/* <label htmlFor="sun_distance">Distance from Sun:</label> */}
+        <label htmlFor="sun_distance">Distance from Sun:</label>
         <input
           id="sun_distance"
           type="text"
@@ -102,7 +98,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Distance from Sun"
         />
-        {/* <label htmlFor="radius">Radius of the Planet:</label> */}
+        <label htmlFor="radius">Radius of the Planet:</label>
         <input
           id="radius"
           type="text"
@@ -110,7 +106,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Radius of the Planet"
         />
-        {/* <label htmlFor="day_length">Length of a Day (in Earth's time):</label> */}
+        <label htmlFor="day_length">Length of a Day (in Earth's time):</label>
         <input
           id="day_length"
           type="text"
@@ -118,7 +114,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Length of a Day (in Earth's time)"
         />
-        {/* <label htmlFor="year_length">Length of a Year (in Earth's time):</label> */}
+        <label htmlFor="year_length">Length of a Year (in Earth's time):</label>
         <input
           id="year_length"
           type="text"
@@ -126,7 +122,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Length of a Year (in Earth's time)"
         />
-        {/* <label htmlFor="moons">Number of Moons:</label> */}
+        <label htmlFor="moons">Number of Moons:</label>
         <input
           id="moons"
           type="number"
@@ -134,7 +130,7 @@ function EditPlanet() {
           onChange={handleNumberChange}
           placeholder="Number of Moons (nummer only)"
         />
-        {/* <label htmlFor="description">Short Description (optional):</label> */}
+        <label htmlFor="description">Short Description (optional):</label>
         <input
           id="description"
           type="text"
@@ -142,7 +138,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Short Description (optional)"
         />
-        {/* <label htmlFor="nasa_link">Website link of NASA or the info source (optional):</label> */}
+        <label htmlFor="nasa_link">Website link of NASA or the info source (optional):</label>
         <input
           id="nasa_link"
           type="url"
@@ -150,7 +146,7 @@ function EditPlanet() {
           onChange={handleTextChange}
           placeholder="Website link of NASA or the info source (optional)"
         />
-        {/* <label htmlFor="img_src">Planet image source link:</label> */}
+        <label htmlFor="img_src">Planet image source link:</label>
         <input
           id="img_src"
           type="url"

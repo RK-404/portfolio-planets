@@ -20,8 +20,10 @@ form {
   
 input {
     display: block;
+    font-size: 14px;
     margin: auto;
     margin-bottom: 1.5em;
+    text-align: center;
     height: 2em;
     width: 50%;
 }

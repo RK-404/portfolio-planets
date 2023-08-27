@@ -1,8 +1,6 @@
 .planet-detail {
     display: flex;
     flex-direction: column;
-    background-color: #822afd70;
-    /* border-radius: 20px; */
     box-shadow: 6px 6px 10px 0px #474747cc;
     color: white;
     margin: auto;
@@ -33,8 +31,8 @@
 /* p {
     font-weight: bold;
     text-align: left;
-}
-
-p span {
-    text-align: right;
 } */
+
+.detail span, a {
+    font-weight: bold;
+}
