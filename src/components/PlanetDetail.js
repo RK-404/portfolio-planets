@@ -42,7 +42,7 @@ function PlanetDetail() {
           <p><span>Radius:</span> {planet.radius ? planet.radius : "--No Data Provided--"}</p>
           <p><span>Length of Day:</span> {planet.day_length ? planet.day_length : "--No Data Provided--"}</p>
           <p><span>Length of Year:</span> {planet.year_length ? planet.year_length : "--No Data Provided--"}</p>
-          <p><span>Number of Moons:</span> {planet.moons > 0 ? planet.moons : "--No Data Provided--"}</p>
+          <p><span>Number of Moons:</span> {planet.moons >= 0 ? planet.moons : "--No Data Provided--"}</p>
           <p>{planet.description}</p>
           {planet.nasa_link &&
             <a href={planet.nasa_link} target="_blank" rel="noreferrer">
