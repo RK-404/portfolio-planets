@@ -2,37 +2,92 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000000;
+  /* background-image: url('./components/images/planets.jpg'); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #00ffaa;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover {
+  color: #fd2a5c;
+  cursor: pointer;
+}
+
+nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #00ff4460, #00ffd960);
+  padding: 2em;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+}
+
+nav img {
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
+}
+
+nav h1 {
+  background-color: #555555cc;
+  font-size: 2em;
+  margin: 5px;
+  padding: 0.1em 0.2em 0.1em 0.2em;
+  text-shadow: 1px 1px 1px #ff007b;
+}
+
+.inner {
+  color: #ff007b;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1em;
+  text-shadow: 1px 1px 2px #001aff, 0 0 1em #00ff80, 0 0 0.2em #00ffd9;
+}
+
+footer {
   color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  right: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="submit"], button {
+  background-color: #822afd90;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px 0px #474747cc;
+  color: #00ffaa;
+  font-weight: bold;
+  padding: 0.7em 2em 0.7em 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"]:hover, button:hover {
+  color: #fd2a5b;
+  cursor: pointer;
 }

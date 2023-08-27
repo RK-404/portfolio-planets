@@ -1,0 +1,38 @@
+.NewEdit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin: auto;
+    width: 100%;
+}
+  
+form {
+    display: block;
+    background-color: #ff007b50;
+    box-shadow: 6px 6px 10px 0px #474747cc;
+    font-weight: bold;
+    margin: auto;
+    margin: 0 0 2em 0;
+    padding: 2.5em 0 1.5em 0;
+    width: 100%;
+}
+  
+input {
+    display: block;
+    margin: auto;
+    margin-bottom: 1.5em;
+    height: 2em;
+    width: 50%;
+}
+  
+input[type="checkbox"] {
+    /* margin: 0; */
+    height: 1.5em;
+    width: 25%;
+}
+
+input[type="submit"] {
+    height: 2.6em;
+    width: 20%;
+}

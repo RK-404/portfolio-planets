@@ -1,0 +1,16 @@
+.not-found {
+    font-size: 2em;
+    margin: auto;
+    margin-top: 3em;
+    width: 90%;
+}
+
+.not-found h1, .not-found h3 {
+    color: #ff007b;
+    text-shadow: 1px 1px 2px #001aff, 0 0 1em #00ff80, 0 0 0.2em #00ffd9;
+}
+
+.not-found h5 {
+    color: #f0f8ff;
+    text-shadow: 1px 1px 2px #ff007b, 0 0 1em #00ff80, 0 0 0.2em #00ffd9;
+}

@@ -1,0 +1,47 @@
+.Index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.all-planets {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+}
+
+.planet-card {
+    display: flex;
+    align-items: center;
+    background-color: #822afd70;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 0px #474747cc;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    height: 200px;
+    width: 180px;
+}
+
+.planet-card:hover {
+    color: #ff007b;
+}
+
+.planet-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 15px;
+    margin-top: 25px;
+    height: 105px;
+    width: 105px;
+}
+
+.planet-card img {
+    border-radius: 15px;
+    width: 100px;
+}
