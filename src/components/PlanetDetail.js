@@ -34,15 +34,37 @@ function PlanetDetail() {
   return (
     <article className="planet-page">
       <div className="planet-detail" style={{backgroundColor: `${planet.is_primary ? '#822afd40' :'#2a93fd40'}`}}>
-        <div className="detail">
+        <div className="details">
           <h1>{planet.name}</h1>
-          <p><span>Planet Type:</span> {planet.type}</p>
-          <p><span>Planet Order:</span> {planet.planet_order ? planet.planet_order : "--No Data Provided--"}</p>
-          <p><span>Distance From Sun:</span> {planet.sun_distance ? planet.sun_distance : "--No Data Provided--"}</p>
-          <p><span>Radius:</span> {planet.radius ? planet.radius : "--No Data Provided--"}</p>
-          <p><span>Length of Day:</span> {planet.day_length ? planet.day_length : "--No Data Provided--"}</p>
-          <p><span>Length of Year:</span> {planet.year_length ? planet.year_length : "--No Data Provided--"}</p>
-          <p><span>Number of Moons:</span> {planet.moons >= 0 ? planet.moons : "--No Data Provided--"}</p>
+          <p className="each-detail">
+            <span>Planet Type: </span>
+            <span>{planet.type}</span>
+          </p>
+          <p className="each-detail">
+            <span>Planet Order: </span>
+            <span>{planet.planet_order ? planet.planet_order : "--Data Not Provided--"}</span>
+          </p>
+          <p className="each-detail">
+            <span>Distance From Sun: </span>
+            <span>{planet.sun_distance ? planet.sun_distance : "--Data Not Provided--"}</span>
+          </p>
+          <p className="each-detail">
+            <span>Radius: </span>
+            <span>{planet.radius ? planet.radius : "--Data Not Provided--"}</span>
+          </p>
+          <p className="each-detail">
+            <span>Length of Day: </span>
+            <span>{planet.day_length ? planet.day_length : "--Data Not Provided--"}</span>
+          </p>
+          <p className="each-detail">
+            <span>Length of Year: </span>
+            <span>{planet.year_length ? planet.year_length : "--Data Not Provided--"}</span>
+          </p>
+          <p className="each-detail">
+            <span>Number of Moons: </span>
+            <span>{planet.moons >= 0 ? planet.moons : "--Data Not Provided--"}</span>
+          </p>
+          <br/>
           <p>{planet.description}</p>
           {planet.nasa_link &&
             <a href={planet.nasa_link} target="_blank" rel="noreferrer">
