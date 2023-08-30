@@ -74,22 +74,21 @@ function NewPlanet() {
           placeholder="Name of the Planet"
           required
         />
-        <label htmlFor="type">Planet Type (Required):</label>
-        <input
-          id="type"
-          type="text"
-          value={planet.type}
-          onChange={handleTextChange}
-          placeholder="Planet Type?"
-          required
-        />
+        <label htmlFor="type">Select Planet Type:</label>
+        <select onChange={handleTextChange} id="type" value={planet.type}>
+          <option value='Terrestrial'>Terrestrial</option>
+          <option value='Gas Giant'>Gas Giant</option>
+          <option value='Ice Giant'>Ice Giant</option>
+          <option value='Dwarf'>Dwarf</option>
+          <option value='Hypothetical'>Hypothetical</option>
+        </select>
         <label htmlFor="planet_order">Planet Order in the Solar System (Numbers only):</label>
         <input
           id="planet_order"
           type="number"
           value={planet.planet_order}
           onChange={handleNumberChange}
-          placeholder="Planet Order in the Solar System (numbers only)"
+          placeholder="Numbers only"
         />
         <label htmlFor="sun_distance">Distance from Sun:</label>
         <input
@@ -97,7 +96,7 @@ function NewPlanet() {
           type="text"
           value={planet.sun_distance}
           onChange={handleTextChange}
-          placeholder="Distance from Sun"
+          placeholder="e.g: 93 million miles (150 million kilometers)"
         />
         <label htmlFor="radius">Radius of the Planet:</label>
         <input
@@ -105,7 +104,7 @@ function NewPlanet() {
           type="text"
           value={planet.radius}
           onChange={handleTextChange}
-          placeholder="Radius of the Planet"
+          placeholder="e.g: 3,959 miles (6,371 kilometers)"
         />
         <label htmlFor="day_length">Length of a Day (in Earth's time):</label>
         <input
@@ -113,7 +112,7 @@ function NewPlanet() {
           type="text"
           value={planet.day_length}
           onChange={handleTextChange}
-          placeholder="Length of a Day (in Earth's time)"
+          placeholder="e.g: 23.9 hours / 243 Earth days"
         />
         <label htmlFor="year_length">Length of a Year (in Earth's time):</label>
         <input
@@ -121,7 +120,7 @@ function NewPlanet() {
           type="text"
           value={planet.year_length}
           onChange={handleTextChange}
-          placeholder="Length of a Year (in Earth's time)"
+          placeholder="e.g: 225 Earth days / 29 Earth years"
         />
         <label htmlFor="moons">Number of Moons:</label>
         <input
@@ -129,15 +128,16 @@ function NewPlanet() {
           type="number"
           value={planet.moons}
           onChange={handleNumberChange}
-          placeholder="Number of Moons (nummer only)"
+          placeholder="Numbers only"
         />
         <label htmlFor="description">Short Description (optional):</label>
-        <input
+        <textarea
           id="description"
           type="text"
+          maxLength="1000"
           value={planet.description}
           onChange={handleTextChange}
-          placeholder="Short Description (optional)"
+          placeholder="Maximum 1000 characters"
         />
         <label htmlFor="nasa_link">Website link of NASA or the info source (optional):</label>
         <input
@@ -145,7 +145,7 @@ function NewPlanet() {
           type="url"
           value={planet.nasa_link}
           onChange={handleTextChange}
-          placeholder="Website link of NASA or the info source (optional)"
+          placeholder="URL only"
         />
         <label htmlFor="img_src">Planet image source link:</label>
         <input
@@ -153,7 +153,7 @@ function NewPlanet() {
           type="url"
           value={planet.img_src}
           onChange={handleTextChange}
-          placeholder="Planet image source link"
+          placeholder="URL only"
         />
         <label htmlFor="is_primary">Check this box if it's a primary Planet: </label>
         <input
