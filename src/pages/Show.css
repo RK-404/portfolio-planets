@@ -1,8 +1,9 @@
 .planet-detail {
     display: flex;
     flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
     box-shadow: 6px 6px 10px 0px #474747cc;
-    color: white;
+    color: #ffffff;
     margin: auto;
     padding: 1.2em 0 2em 0;
     width: 100%;
@@ -25,8 +26,8 @@
 }
 
 .planet-detail h1 {
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 3.5em;
+    font-family: 'Rubik Mono One', Copperplate, sans-serif;
+    font-size: 2.5em;
     text-shadow: 1px 1px 2px #ff007b, 0 0 1em #00ff80, 0 0 0.2em #00ffd9;
 }
 
@@ -37,6 +38,9 @@
 .each-detail {
     display: flex;
     align-items: flex-start;
+    border-bottom: 2px solid #00000040;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .each-detail span {
