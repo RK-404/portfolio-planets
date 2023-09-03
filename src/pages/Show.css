@@ -39,11 +39,11 @@
     display: flex;
     align-items: flex-start;
     border-bottom: 2px solid #00000040;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .each-detail span {
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: start;
     width: 50%;
 }

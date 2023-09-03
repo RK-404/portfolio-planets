@@ -96,13 +96,10 @@ input[type="submit"]:hover, button:hover {
 @media (max-width: 614px) {
   .inner {
     flex-direction: column-reverse;
+    margin-top: 12em;
   }
 
   input[type="submit"] {
     width: 40%;
-  }
-
-  .inner {
-    margin-top: 12em;
   }
 }
