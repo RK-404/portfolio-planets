@@ -26,10 +26,6 @@
     width: 180px;
 }
 
-.planet-card:hover {
-    color: #ff007b;
-}
-
 .planet-img {
     display: flex;
     align-items: center;

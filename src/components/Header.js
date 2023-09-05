@@ -9,6 +9,9 @@ export default function Header() {
       <div className="nav-bar">
         <h1><Link to="/" className="header-link">HOME</Link></h1>
         <h1><Link to="/planets" className="header-link">PLANETS</Link></h1>
+        <div>
+          <p>Log In/Create Account</p>
+        </div>
       </div>
     </nav>
   );
