@@ -4,7 +4,7 @@
     align-items: center;
     color: #ffffff;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     width: 100%;
 }
   
@@ -49,6 +49,10 @@ input[type="submit"] {
 }
 
 @media (max-width: 614px) {
+    .NewEdit {
+        margin-bottom: 6em;
+    }
+
     input[type="submit"] {
         width: 40%;
     }

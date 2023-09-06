@@ -44,6 +44,7 @@ nav img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-evenly;
   width: 95%;
 }
@@ -70,12 +71,18 @@ nav h1 {
 }
 
 footer {
+  background: linear-gradient(to right, #00ffd950, #00ff4450);
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   font-size: 10px;
   font-weight: bold;
   position: fixed;
   bottom: 0;
-  right: 1%;
+  /* right: 1%; */
+  width: 100%;
 }
 
 input[type="submit"], button {
@@ -94,6 +101,11 @@ input[type="submit"]:hover, button:hover {
 }
 
 @media (max-width: 614px) {
+  .nav-bar {
+    flex-direction: column;
+    margin-right: 9em;
+  }
+
   .inner {
     flex-direction: column-reverse;
     margin-top: 12em;
@@ -101,5 +113,9 @@ input[type="submit"]:hover, button:hover {
 
   input[type="submit"] {
     width: 40%;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }

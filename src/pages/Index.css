@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    margin-bottom: 3em;
     width: 70%;
 }
 
@@ -40,4 +41,10 @@
 .planet-card img {
     border-radius: 15px;
     width: 100px;
+}
+
+@media (max-width: 614px) {
+    .all-planets {
+        margin-bottom: 5em;
+    }
 }
