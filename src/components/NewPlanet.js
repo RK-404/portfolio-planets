@@ -11,7 +11,7 @@ function NewPlanet() {
 
   const [planet, setPlanet] = useState({
     name: "",
-    type: "",
+    type: "Terrestrial",
     planet_order: "",
     sun_distance: "",
     radius: "",

@@ -42,7 +42,7 @@ function PlanetDetail() {
           </p>
           <p className="each-detail">
             <span>Planet Order: </span>
-            <span>{planet.planet_order ? planet.planet_order : "--No Data--"}</span>
+            <span>{planet.planet_order >= 0 ? planet.planet_order : "--No Data--"}</span>
           </p>
           <p className="each-detail">
             <span>Distance From Sun: </span>
